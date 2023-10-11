@@ -1,0 +1,42 @@
+[
+  {
+    "category": "આધ્યાશક્તિની આરતી",
+    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "videos": [
+      {
+        "name": " અંબામાની આરતી (સોનલ ગઢવી)",
+        "link": "https://www.youtube.com/watch?v=dOFWhI92IIc"
+      }
+    ]
+  },
+  {
+    "category": "ખેલૈયા ગરબા",
+    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "videos": [
+      {
+        "name": " નોન સ્ટોપ ખૈલૈયા",
+        "link": "https://www.youtube.com/watch?v=5hCFTa1evGk"
+      }
+    ]
+  },
+  {
+    "category": "ટીટોડા ગરબા",
+    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "videos": [
+      {
+        "name": "DJ ટીટોડા કરક્મલસ",
+        "link": "https://www.youtube.com/watch?v=h9CyBSoh20Q"
+      }
+    ]
+  },
+  {
+    "category": "પ્રાચીન ગરબા",
+    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "videos": [
+      {
+        "name": "સુપર હીટ પ્રાચીન ગરબા",
+        "link": "https://www.youtube.com/watch?v=dJ5tkIu1nQs"
+      }
+    ]
+  }
+]
