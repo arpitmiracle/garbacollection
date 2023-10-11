@@ -5,6 +5,7 @@ import 'package:garbacollection/Constants/ImagePath.dart';
 import 'package:garbacollection/Screen/HomeScreen/MenuItems.dart';
 import 'package:garbacollection/Screen/MusicScreen/MusicScreen.dart';
 import 'package:garbacollection/Screen/SearchScreen/SearchScreen.dart';
+import 'package:garbacollection/Screen/Settings/settings_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     MenuItems(text: "Search", imgIcon: ImagePath.search),
     MenuItems(text: "User", imgIcon: ImagePath.setting),
   ];
-  final _buildBody = <Widget>[MusicScreen(), SearchScreen(), MusicScreen()];
+  final _buildBody = <Widget>[MusicScreen(), SearchScreen(), SettingsPage()];
 
   @override
   Widget build(BuildContext context) {
