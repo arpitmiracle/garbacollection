@@ -7,20 +7,11 @@ import 'package:garbacollection/Screen/MusicScreen/GarbaCategory.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
-class SongListScreen extends StatefulWidget {
-  @override
-  State<SongListScreen> createState() => _SongListScreenState();
-}
-
-class _SongListScreenState extends State<SongListScreen> {
+class SongListScreen extends StatelessWidget { 
   GarbaCategory garbaCategory = Get.arguments;
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.portraitUp,
-    ]);
     return SafeArea(
       child: Scaffold(
         backgroundColor: CustomColors.white,
@@ -58,7 +49,9 @@ class _SongListScreenState extends State<SongListScreen> {
         ),
         body: ListView.builder(
             itemCount: garbaCategory.videos.length,
-          itemBuilder: (context, index) {
+            padding: EdgeInsets.all(15),
+            shrinkWrap: true,
+            itemBuilder: (context, index) {
               return Container(
                 color: CustomColors.songListColor,
                 height: 80,
@@ -106,7 +99,10 @@ class _SongListScreenState extends State<SongListScreen> {
                           onTap: () async {
                            await Get.toNamed(Routes.playSongScreen, arguments: garbaCategory.videos[index].link);
                            Future.delayed(Duration(milliseconds: 500),() {
-                             setState(() {});
+                             SystemChrome.setPreferredOrientations([
+                               DeviceOrientation.portraitDown,
+                               DeviceOrientation.portraitUp,
+                             ]);
                            },);
                           },
                           child: Image.asset(

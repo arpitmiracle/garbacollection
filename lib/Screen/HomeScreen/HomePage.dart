@@ -26,23 +26,6 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: CustomColors.white,
-        appBar: AppBar(
-          toolbarHeight: 60,
-          centerTitle: true,
-          title: Text(
-            AppStrings.home,
-            style: TextStyle(
-                fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
-          ),
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomRight,
-                  colors: [CustomColors.primary, CustomColors.secondary]),
-            ),
-          ),
-        ),
         body: _buildBody[index],
         bottomNavigationBar: _createBottomNavigationBar(),
       ),

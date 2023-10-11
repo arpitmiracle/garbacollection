@@ -10,13 +10,13 @@ class SearchPageController extends GetxController {
   getData() async{
     final String jsonString = await rootBundle.loadString('assets/i18n/song.json');
     List<dynamic> jsonData = json.decode(jsonString);
-
+    videoLinks = [];
     for (var category in jsonData) {
       for (var video in category["videos"]) {
         videoLinks.add(Video(name: video["name"], link: video["link"]));
       }
     }
-    print(videoLinks);
+    update();
   }
 
 }

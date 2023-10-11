@@ -8,7 +8,7 @@ class CustomTextField extends StatelessWidget {
     this.radius = 5,
     this.keyboardType,
     this.borderColor = CustomColors.borderColor,
-    this.fillColor =    CustomColors.textFieldColor,
+    this.fillColor =    CustomColors.white,
     this.boderWidth = 1,
     this.outPadding = 0,
     this.fontSize,
