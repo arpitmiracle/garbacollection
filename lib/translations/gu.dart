@@ -8,7 +8,7 @@ class Gu {
     AppStrings.version: 'આવૃત્તિ',
     AppStrings.settings: 'સેટિંગ્સ',
     AppStrings.music_categories: 'સંગીત શ્રેણીઓ',
-    AppStrings.search_by_name: 'નામ અને કળાકાર દ્વારા શોધો',
+    AppStrings.search_by_name: 'નામ અને કલાકાર દ્વારા શોધો',
     AppStrings.rate_us: 'અમને રેટ કરો',
     AppStrings.share_app: 'એપ્લિકેશન શેર કરો',
     AppStrings.music: 'સંગીત',
