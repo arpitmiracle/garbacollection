@@ -1,5 +1,3 @@
-import 'dart:convert';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -56,10 +54,11 @@ class MusicScreen extends StatelessWidget {
                           },
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(15),
-                              child: CachedNetworkImage(
-                                imageUrl: category.albumPoster,
-                                placeholder: (context, url) => CircularProgressIndicator(),
-                              ),
+                              // child: CachedNetworkImage(
+                              //   imageUrl: category.albumPoster,
+                              //   placeholder: (context, url) => CircularProgressIndicator(),
+                              // ),
+                            child: Image.asset(category.albumPoster,height: 150,fit: BoxFit.cover,),
                           ),
                         ),
                         SizedBox(

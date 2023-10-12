@@ -42,7 +42,7 @@ dependencies:
   youtube_player_flutter: ^8.1.2
   share_plus:
   url_launcher:
-  cached_network_image: ^3.3.0
+#  cached_network_image: ^3.3.0
   hive_flutter:
 
 dev_dependencies:
@@ -71,6 +71,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/category/
     - assets/i18n/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

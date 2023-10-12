@@ -1,7 +1,7 @@
 [
   {
     "category": "આધ્યાશક્તિની આરતી",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/adhyashakti.jpg",
     "videos": [
       {
         "name": " અંબામાની આરતી",
@@ -61,7 +61,7 @@
 
   {
     "category": "ખેલૈયા ગરબા",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/khelaiya.jpg",
     "videos": [
       {
         "name": " નોન સ્ટોપ ખૈલૈયા",
@@ -365,7 +365,7 @@
   },
   {
     "category": "ટીટોડા ગરબા",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/titoda.jpg",
     "videos": [
       {
         "name": "DJ ટીટોડા કરક્મલસ",
@@ -437,7 +437,7 @@
   },
   {
     "category": "પ્રાચીન ગરબા",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/prachin.jpg",
     "videos": [
       {
         "name": "સુપર હીટ પ્રાચીન ગરબા",

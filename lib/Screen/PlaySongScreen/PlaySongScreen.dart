@@ -21,6 +21,11 @@ class _PlaySongScreenState extends State<PlaySongScreen> {
   @override
   void initState() {
     super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+
     controller =YoutubePlayerController(initialVideoId: YoutubePlayer.convertUrlToId(path)!,
     flags: const YoutubePlayerFlags(
       mute: false,
@@ -56,61 +61,62 @@ class _PlaySongScreenState extends State<PlaySongScreen> {
 
   @override
   Widget build(BuildContext context){
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
 
-    return YoutubePlayerBuilder(
-      builder: (context, player) => Scaffold(
-        body: ListView(
-          children: [
-            player,
-          ],
-        ),
-      ),
-      player: YoutubePlayer(
-        controller: controller,
-        showVideoProgressIndicator: true,
-        progressIndicatorColor: Colors.blueAccent,
-        topActions: <Widget>[
-          const SizedBox(width: 8.0),
-          IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
-              size: 25.0,
-            ),
-            onPressed: () {
-              Get.back();
-            },
-          ),
-          Expanded(
-            child: Text(
-              controller.metadata.title,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18.0,
-              ),
-              overflow: TextOverflow.ellipsis,
-              maxLines: 1,
-            ),
-          )
-        ],
-        onReady: () {
-          _isPlayerReady = true;
-        },
-        onEnded: (data) {
-          // controller.load(_ids[(_ids.indexOf(data.videoId) + 1) % _ids.length]);
-          // _showSnackBar('Next Video Started!');
-        },
-      ),
-      onExitFullScreen: () {
-        SystemChrome.setPreferredOrientations([
-          DeviceOrientation.landscapeLeft,
-          DeviceOrientation.landscapeRight,
-        ]);
+    return WillPopScope(
+      onWillPop: () async {
+        return true;
       },
+      child: YoutubePlayerBuilder(
+        builder: (context, player) => Scaffold(
+          body: ListView(
+            children: [
+              player,
+            ],
+          ),
+        ),
+        player: YoutubePlayer(
+          controller: controller,
+          showVideoProgressIndicator: true,
+          progressIndicatorColor: Colors.blueAccent,
+          topActions: <Widget>[
+            const SizedBox(width: 8.0),
+            IconButton(
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.white,
+                size: 25.0,
+              ),
+              onPressed: () {
+                Get.back();
+              },
+            ),
+            Expanded(
+              child: Text(
+                controller.metadata.title,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 18.0,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
+              ),
+            )
+          ],
+          onReady: () {
+            _isPlayerReady = true;
+          },
+          onEnded: (data) {
+            // controller.load(_ids[(_ids.indexOf(data.videoId) + 1) % _ids.length]);
+            // _showSnackBar('Next Video Started!');
+          },
+        ),
+        onExitFullScreen: () {
+          SystemChrome.setPreferredOrientations([
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.portraitDown,
+          ]);
+        },
+      ),
     );
   }
 }

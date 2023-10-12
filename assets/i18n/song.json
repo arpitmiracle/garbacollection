@@ -1,7 +1,7 @@
 [
   {
-    "category": "Adhyashaklat ni Aarti",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "category": "Adhyashakti ni Aarti",
+    "albumPoster": "assets/images/category/adhyashakti.jpg",
     "videos": [
       {
         "name": "Ambama ni  Aarti ",
@@ -16,13 +16,13 @@
 
       }
       ,  {
-        "name": "Adhyashaklatni Aarti ",
+        "name": "Adhyashakti Aarti ",
         "link": "https://www.youtube.com/watch?v=SU8aghkgeCQ",
         "artist":"Kinjal Dave"
 
       }
       ,  {
-        "name": " Adhyashaklat ni Aarti ",
+        "name": " Adhyashakti ni Aarti ",
         "link": "https://www.youtube.com/watch?v=BvXa_vwCGP0&feature=youtu.be",
         "artist":"Jignesh Kaviraj"
       }
@@ -35,7 +35,7 @@
       }
       ,
       {
-        "name": " Adhyashaklat ni Aarti",
+        "name": " Adhyashakti ni Aarti",
         "link": "https://www.youtube.com/watch?v=ekdogHIwne8",
         "artist":"Asha Kareklaya"
 
@@ -47,13 +47,13 @@
 
       } ,
       {
-        "name": "Adhyashaklat ni Aarti",
+        "name": "Adhyashakti ni Aarti",
         "link": "https://www.youtube.com/watch?v=6xIojYXjY-c",
         "artist":"Gitaben Rabari"
 
       } ,
       {
-        "name": "Adhyashaklat ni Aarti ",
+        "name": "Adhyashakti ni Aarti ",
         "link": "https://www.youtube.com/watch?v=3tWyq8w904A&feature=youtu.be",
         "artist":"Hemant Chauhan"
 
@@ -62,7 +62,7 @@
   },
   {
     "category": "Khelaiya Garba",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/khelaiya.jpg",
     "videos": [
       {
         "name": "Non stop Khailaiya",
@@ -318,7 +318,7 @@
   },
   {
     "category": "Titoda Garba",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/titoda.jpg",
     "videos": [
       {
         "name": "DJ Titoda Remix",
@@ -379,7 +379,7 @@
   },
   {
     "category": "Prachin Garba",
-    "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
+    "albumPoster": "assets/images/category/prachin.jpg",
     "videos": [
       {
         "name": "Super Hit Prachin Garba",
