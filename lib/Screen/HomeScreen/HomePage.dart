@@ -1,12 +1,12 @@
 import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/material.dart';
-import 'package:garbacollection/Constants/AppStrings.dart';
 import 'package:garbacollection/Constants/ImagePath.dart';
 import 'package:garbacollection/Screen/HomeScreen/MenuItems.dart';
 import 'package:garbacollection/Screen/MusicScreen/MusicScreen.dart';
 import 'package:garbacollection/Screen/SearchScreen/SearchScreen.dart';
 import 'package:garbacollection/Screen/Settings/settings_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:garbacollection/translations/appString.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -16,9 +16,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int index = 0;
   final menuItemList = <MenuItems>[
-    MenuItems(text: "Music", imgIcon: ImagePath.music),
-    MenuItems(text: "Search", imgIcon: ImagePath.search),
-    MenuItems(text: "User", imgIcon: ImagePath.setting),
+    MenuItems(text: AppStrings.music.tr, imgIcon: ImagePath.music),
+    MenuItems(text: AppStrings.search.tr, imgIcon: ImagePath.search),
+    MenuItems(text: AppStrings.user.tr, imgIcon: ImagePath.setting),
   ];
   final _buildBody = <Widget>[MusicScreen(), SearchScreen(), SettingsPage()];
 

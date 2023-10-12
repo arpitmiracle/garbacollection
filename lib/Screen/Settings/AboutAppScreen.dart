@@ -2,6 +2,8 @@ import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:garbacollection/Constants/ImagePath.dart';
+import 'package:garbacollection/translations/appString.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -13,7 +15,7 @@ class AboutAppScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "About App",
+          AppStrings.settings.tr,
           style: TextStyle(
               fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
         ),
@@ -43,7 +45,7 @@ class AboutAppScreen extends StatelessWidget {
                   Image.asset(ImagePath.imgLogo, height: 35.w),
                   SizedBox(height: 1.h,),
                   CustomText(
-                    text: "Garba Collection",
+                    text: AppStrings.garba_collection.tr,
                     fontSize: 18.sp,
                     color: CustomColors.white,
                   ),
@@ -88,7 +90,7 @@ class AboutAppScreen extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 6.w),
                         child: CustomText(
-                          text: "Version 1.0.0",
+                          text: "${AppStrings.version.tr} 1.0.0",
                           color: CustomColors.white,
                           fontSize: 16.sp,
                         ),
@@ -102,7 +104,7 @@ class AboutAppScreen extends StatelessWidget {
                       //   launchUrl(Uri.parse(MyStrings.website_url));
                       // },),
                       Divider(thickness: 1, height: 3.h, color: CustomColors.white,),
-                      getListItem("Privacy policy", onTap: () {
+                      getListItem(AppStrings.privacy_policy.tr, onTap: () {
                         launchUrl(Uri.parse(""));
                       },),
                       // Divider(color: AppColors.white30, thickness: 1,height: 3.h,),

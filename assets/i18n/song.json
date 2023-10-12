@@ -1,41 +1,455 @@
 [
   {
-    "category": "આધ્યાશક્તિની આરતી",
+    "category": "Adhyashaklat ni Aarti",
     "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
     "videos": [
       {
-        "name": " અંબામાની આરતી (સોનલ ગઢવી)",
-        "link": "https://www.youtube.com/watch?v=dOFWhI92IIc"
+        "name": "Ambama ni  Aarti ",
+        "link": "https://www.youtube.com/watch?v=dOFWhI92IIc&feature=youtu.be",
+        "artist":"Sonal Garhvi"
+      }
+      ,
+      {
+        "name": " Ambama ni Aarti ",
+        "link": "https://www.youtube.com/watch?v=_amn6jcLUo8&feature=youtu.be",
+        "artist":"Ambaji Mandir"
+
+      }
+      ,  {
+        "name": "Adhyashaklatni Aarti ",
+        "link": "https://www.youtube.com/watch?v=SU8aghkgeCQ",
+        "artist":"Kinjal Dave"
+
+      }
+      ,  {
+        "name": " Adhyashaklat ni Aarti ",
+        "link": "https://www.youtube.com/watch?v=BvXa_vwCGP0&feature=youtu.be",
+        "artist":"Jignesh Kaviraj"
+      }
+      ,
+      {
+        "name": " Vishavambhari Stuti",
+        "link": "https://www.youtube.com/watch?v=r9FDDHo9frQ",
+        "artist":"Gitaben Rabari"
+
+      }
+      ,
+      {
+        "name": " Adhyashaklat ni Aarti",
+        "link": "https://www.youtube.com/watch?v=ekdogHIwne8",
+        "artist":"Asha Kareklaya"
+
+      } ,
+      {
+        "name": " Ambama ni Aarti",
+        "link": "https://www.youtube.com/watch?v=V8ZuU_4xepc&feature=youtu.be",
+        "artist":"Kirtidan Gadhvi"
+
+      } ,
+      {
+        "name": "Adhyashaklat ni Aarti",
+        "link": "https://www.youtube.com/watch?v=6xIojYXjY-c",
+        "artist":"Gitaben Rabari"
+
+      } ,
+      {
+        "name": "Adhyashaklat ni Aarti ",
+        "link": "https://www.youtube.com/watch?v=3tWyq8w904A&feature=youtu.be",
+        "artist":"Hemant Chauhan"
+
       }
     ]
   },
   {
-    "category": "ખેલૈયા ગરબા",
+    "category": "Khelaiya Garba",
     "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
     "videos": [
       {
-        "name": " નોન સ્ટોપ ખૈલૈયા",
-        "link": "https://www.youtube.com/watch?v=5hCFTa1evGk"
+        "name": "Non stop Khailaiya",
+        "link": "https://www.youtube.com/watch?v=5hCFTa1evGk",
+        "artist":"Unknown"
+      } ,
+      {
+        "name": "Khelaiya bhag : 1",
+        "link": "https://www.youtube.com/watch?v=qGPSIu_r48I",
+        "artist":"Unknown"
+      },
+      {
+        "name": "Sonal Garbo Shire",
+        "link": "https://www.youtube.com/watch?v=pyAjcZPIXi8&ab_channel=IshtarGujarati",
+        "artist":"Kishore Manraja"
+      },
+      {
+        "name": "Tara Vina Shyam Mane ",
+        "link": "https://www.youtube.com/watch?v=c2Y1Lz73Lak&ab_channel=IshtarGujarati",
+        "artist":"Unknown"
+      },
+      {
+        "name": "Khelaiya bhag : 2 Dhol Na Dhabkare ",
+        "link": "https://www.youtube.com/watch?v=hrJQ0iQ1iTQ&ab_channel=IshtarGujarati",
+        "artist":"Unknown"
+      },
+      {
+        "name": "Kum Kum Na Pagla",
+        "link": "https://www.youtube.com/watch?v=OBqfEhs92a4&ab_channel=IshtarGujarati",
+        "artist":"Kishore Manraja"
+      },
+      {
+        "name": "Ame Maiyarare Gokul Gamna  ",
+        "link": "https://www.youtube.com/watch?v=htN8_6pHEx8&ab_channel=IshtarGujarati",
+        "artist":"Unknown"
+      },
+      {
+        "name": "Khelaiya DJ Mix",
+        "link": "https://www.youtube.com/watch?v=EvXAyjcmMps&ab_channel=IshtarGujarati",
+        "artist":"Unknown"
+      },
+      {
+        "name": "Maano Garbo",
+        "link": "https://www.youtube.com/watch?v=sXq3RWz7VUk&ab_channel=IshtarGujarati",
+        "artist":" Rupal Doshi & Nisha Upadhyay"
+      },
+      {
+        "name": "Kaktidan Gadhvi Tahukar Bhag : 1",
+        "link": "https://www.youtube.com/watch?v=vbSaPo8nlRQ&ab_channel=StudioSaraswatiOfficialChannel",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kaktidan Gadhvi Tahukar Bhag : 2",
+        "link": "https://www.youtube.com/watch?v=F0_y9fSfmbM&ab_channel=StudioSaraswatiOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 3",
+        "link": "https://www.youtube.com/watch?v=19-Fjctg0Mo&ab_channel=RDCGujarati",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 4",
+        "link": "https://www.youtube.com/watch?v=JbchfSZSPw4&feature=youtu.be&ab_channel=StudioSaraswatiOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 5",
+        "link": "https://www.youtube.com/watch?v=uYkRZPmAHLQ&feature=youtu.be&ab_channel=RDCGujarati",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 6",
+        "link": "https://www.youtube.com/watch?v=c_UC5gs4JGg&feature=youtu.be&ab_channel=StudioSaraswatiOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 7",
+        "link": "https://www.youtube.com/watch?v=c5tN6y1cVKI&ab_channel=KirtidanGadhviOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 8",
+        "link": "https://www.youtube.com/watch?v=q7nTd79yjzo&feature=youtu.be&ab_channel=KirtidanGadhviOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 9",
+        "link": "https://www.youtube.com/watch?v=xqtThl1mX5s&feature=youtu.be&ab_channel=KirtidanGadhviOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name": "Kirtidan Gadhvi Tahukar Bhag : 10",
+        "link": "https://www.youtube.com/watch?v=Pm0Yt_iuURw&ab_channel=KirtidanGadhviOfficial",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name":"Kirtidan Gadhvi Thanganat",
+        "link":"https://www.youtube.com/watch?v=FwVut8M_cWo&ab_channel=SoorMandirAudioJukebox",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name":"Kirtidan Gadhvi-Van Ma Chandaliyo Ugyo",
+        "link":"https://www.youtube.com/watch?v=KjUVaWfx2Mw&feature=youtu.be&ab_channel=RDCGujarati",
+        "artist":"Kirtidan Gadhvi"
+      },
+      {
+        "name":"Jignesh Kaviraj Non Stop Garba",
+        "link":"https://www.youtube.com/watch?v=hPY8dUZeucs&feature=youtu.be&ab_channel=RDCGujaratiMusic",
+        "artist":"Jignesh Kaviraj"
+      },
+      {
+        "name":"Jignesh Kaviraj No Zankar",
+        "link":"https://www.youtube.com/watch?v=y78LCCWJ48o&feature=youtu.be&ab_channel=EktaSoundHD",
+        "artist":"Jignesh Kaviraj"
+      },
+      {
+        "name":"Jignesh Kaviraj-Tejal Thakor (Kanudo)",
+        "link":"https://www.youtube.com/watch?v=UL98sXGJdI0&ab_channel=EktaSoundDigital",
+        "artist":"Jignesh Kaviraj&Tejal Thakor"
+      },
+      {
+        "name":"Jignesh Kaviraj-Radhika Ras",
+        "link":"https://www.youtube.com/watch?v=-gpvo_U148w&ab_channel=EktaSound",
+        "artist":"Jignesh Kaviraj"
+      },
+      {
+        "name":"Geeta Rabari Ni Ramzat Bhag: 1",
+        "link":"https://www.youtube.com/watch?v=gynuMvdPgwk&ab_channel=RDCGujarati",
+        "artist":"Geeta Rabari"
+      } ,
+      {
+        "name":"Geeta Rabari tal",
+        "link":"https://www.youtube.com/watch?v=pT6Gcf4k9uc&ab_channel=GeetaBenRabari",
+        "artist":"Geeta Rabari"
+      },
+      {
+        "name":"Geeta Rabari Ni Ramzat Bhag: 2",
+        "link":"https://www.youtube.com/watch?v=np4XYWUgFeQ&feature=youtu.be",
+        "artist":"Geeta Rabari"
+      },
+      {
+        "name":"Geeta Rabari tal 2.0",
+        "link":"https://www.youtube.com/watch?v=Gz7gSjCYQE0&feature=youtu.be&ab_channel=GeetaBenRabari",
+        "artist":"Geeta Rabari"
+      },
+      {
+        "name":"Kinjal Dave No Rankar ",
+        "link":"https://www.youtube.com/watch?v=W7HgA3j49_o&ab_channel=RDCGujarati",
+        "artist":"Kinjal Dave"
+      },
+      {
+        "name":"Kinjal Dave Non Stop Garba",
+        "link":"https://www.youtube.com/watch?v=co516DbAAyw&ab_channel=KDDigital",
+        "artist":"Kinjal Dave"
+      },
+      {
+        "name":"Kinjal Dave Killol",
+        "link":"https://www.youtube.com/watch?v=XN5MYcku-wQ&ab_channel=KDDigital",
+        "artist":"Kinjal Dave"
+      },
+      {
+        "name":"Kinjal Dave Killol 2.0",
+        "link":"https://www.youtube.com/watch?v=yvs-M7yDfwQ&ab_channel=KDDigital",
+        "artist":"Kinjal Dave"
+      },
+      {
+        "name":"Koyaldi 1.0",
+        "link":"https://www.youtube.com/watch?v=iHV3kJQHl7E&ab_channel=KairaviBuch",
+        "artist":" Kairavi Buch"
+      },
+      {
+        "name":"Moraliyu",
+        "link":"https://www.youtube.com/watch?v=LoxoKEQb1tQ&ab_channel=KairaviBuch",
+        "artist":"Kairavi Buch"
+      },
+      {
+        "name":"Navratri",
+        "link":"https://www.youtube.com/watch?v=GT5xdDLDYEg&ab_channel=AlpaPatelOfficial",
+        "artist":"Alpa Patel"
+      },
+      {
+        "name":"2 Tali",
+        "link":"https://www.youtube.com/watch?v=o-lSTIRxEQA&feature=youtu.be&ab_channel=SoorMandir",
+        "artist":"Unknown"
+      },
+      {
+        "name":"Ghoonghat",
+        "link":"https://www.youtube.com/watch?v=EwbjQGiMZlo&feature=youtu.be&ab_channel=StudioJaySomnathOfficialChannel",
+        "artist":"Poonam Gondaliya"
+      },
+      {
+        "name":"Ghoonghat 2.0",
+        "link":"https://www.youtube.com/watch?v=0776wWZlGJY&ab_channel=StudioJaySomnathOfficialChannel",
+        "artist":"Poonam Gondaliya"
+      },
+      {
+        "name":"Prachin Garba",
+        "link":"https://www.youtube.com/watch?v=Rgg0V8vr2sY&feature=youtu.be&ab_channel=StudioSangeeta",
+        "artist":"Unknown"
+      },
+      {
+        "name":"Indhana Vinvaa Gayi Thi More Saiyan",
+        "link":"https://www.youtube.com/watch?v=Q_ZXz9Omq4k&ab_channel=GujaratiJalso",
+        "artist":"Falguni Pathak"
+      },
+      {
+        "name":"Pari Hoon Main",
+        "link":"https://www.youtube.com/watch?v=aAhxpgOed7I&ab_channel=ABCreations",
+        "artist":"Unknown"
+      },
+      {
+        "name":"Non Stop Falguni Pathak Garba",
+        "link":"https://www.youtube.com/watch?v=8iZkaeYHhw8&ab_channel=RAJSHAKTIPRODUCTION",
+        "artist":"Falguni Pathak"
+      },
+      {
+        "name":"Navratri Mashup",
+        "link":"https://www.youtube.com/watch?v=UV6Kh0UXYX8&ab_channel=DJDaveNYC",
+        "artist":"Sunix Thakor"
+      },
+      {
+        "name":"Navaratri Remix",
+        "link":"https://www.youtube.com/watch?v=1CZvnJqjrr4&feature=youtu.be&ab_channel=DJIndiana",
+        "artist":"Unknown"
+      },
+      {
+        "name":"Chalti | Fast Garba ",
+        "link":"https://www.youtube.com/watch?v=sjJOvsAf1r8&ab_channel=ATOZMUSIC",
+        "artist":"Aishwarya Majmudar"
+      },
+      {
+        "name":"Aishwarya Majmudar Garba",
+        "link":"https://www.youtube.com/watch?v=Kqwr6DfCx7M&feature=youtu.be&ab_channel=RDCGujarati",
+        "artist":"Aishwarya Majmudar"
+      },
+      {
+        "name":" Aishwarya Majmudar Rangtaali",
+        "link":"https://www.youtube.com/watch?v=szzvM1ImRMA&ab_channel=SurSagarMusic",
+        "artist":"Aishwarya Majmudar"
+      },
+      {
+        "name":"Rangtaali - 3",
+        "link":"https://www.youtube.com/watch?v=3CKam-ComPw&ab_channel=SurSagarMusic",
+        "artist":" Geeta Rabari & Aditya Gadhavi & Himali Vyas N"
+      },
+      {
+        "name":"All Time Hit Garba ",
+        "link":"file:///C:/Users/Admin/Downloads/_--_230927_065628%20garba%20collection.pdf",
+        "artist":"Hemant Chauhan"
       }
     ]
   },
   {
-    "category": "ટીટોડા ગરબા",
+    "category": "Titoda Garba",
     "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
     "videos": [
       {
-        "name": "DJ ટીટોડા કરક્મલસ",
-        "link": "https://www.youtube.com/watch?v=h9CyBSoh20Q"
+        "name": "DJ Titoda Remix",
+        "link": "https://www.youtube.com/watch?v=h9CyBSoh20Q&ab_channel=HariHatvani",
+        "artist": "Unknown"
+      },
+      {
+        "name": "Titoda-Vana Bharvad",
+        "link": "https://www.youtube.com/watch?v=2WKqQivSkkI&ab_channel=RamAudio",
+        "artist": "Vana Bharvad"
+      },
+      {
+        "name": "Titoda-Hemant Chauhan-Kavita Das ",
+        "link": "https://www.youtube.com/watch?v=YRQV7nsbGEY&feature=youtu.be&ab_channel=StudioSangeeta",
+        "artist": "Hemant Chauhan & Kavita Das"
+      },
+      {
+        "name": "Titoda Kinkadi Kapdani",
+        "link": "https://www.youtube.com/watch?v=BACsjHuGBKc&ab_channel=RahulMehtaBhudevOfficial",
+        "artist": "Unknown"
+      },
+      {
+        "name": "Bhala Mori Rama ",
+        "link": "https://www.youtube.com/watch?v=9MDNDLrfBFQ&ab_channel=SagaMusicGujarati",
+        "artist": "Arvind Vegda"
+      },
+      {
+        "name": "Ranchhod Rangila",
+        "link": "https://www.youtube.com/watch?v=vLgysbVLFOo&feature=youtu.be&ab_channel=StudioRhythmRajkot",
+        "artist": "VANABHAI BHARVAD"
+      },
+      {
+        "name": "Dj Titoda Blast",
+        "link": "https://www.youtube.com/watch?v=ScdlmeiP9AI&ab_channel=SSDIGITAL",
+        "artist": "Hansha bharwad & Vipul Susra "
+      },
+      {
+        "name": "Geeta Rabari - Titoda Garba",
+        "link": "https://www.youtube.com/watch?v=yzjYCjGx6IU&ab_channel=HarisinhRajputofficial",
+        "artist": "Geeta Rabari"
+      },
+      {
+        "name": "Titoda Dhamal",
+        "link": "https://www.youtube.com/watch?v=dsiEf6Uz2K8&feature=youtu.be&ab_channel=GogaStarFilmsMedia",
+        "artist": "Kaushik Bharwad & Hetal Bharwad"
+      },
+      {
+        "name": "Titoda - Jignesh Kaviraj",
+        "link": "https://www.youtube.com/watch?v=MZxR8fikCBY&feature=youtu.be&ab_channel=EktaSound",
+        "artist": "Jignesh Kaviraj"
+      },
+      {
+        "name": "Sanedo",
+        "link": "https://www.youtube.com/watch?v=vWWhnntM1Ck&ab_channel=StudioSangeeta",
+        "artist": "Unknown"
       }
     ]
   },
   {
-    "category": "પ્રાચીન ગરબા",
+    "category": "Prachin Garba",
     "albumPoster": "https://i.ibb.co/0fzYpCy/05eeb93a2e41734ecb6044146351f11e.jpg",
     "videos": [
       {
-        "name": "સુપર હીટ પ્રાચીન ગરબા",
-        "link": "https://www.youtube.com/watch?v=dJ5tkIu1nQs"
+        "name": "Super Hit Prachin Garba",
+        "link": "https://www.youtube.com/watch?v=dJ5tkIu1nQs&ab_channel=StudioSangeeta",
+        "artist": "Unknown"
+      },
+      {
+        "name": "Lokpriy Garba - Suresh Raval ",
+        "link": "https://www.youtube.com/watch?v=Rgg0V8vr2sY&ab_channel=StudioSangeeta",
+        "artist": "Suresh Raval"
+      },
+      {
+        "name": "Ramzat",
+        "link": "https://www.youtube.com/watch?v=qRBix85kgvI&ab_channel=SurSagarMusic",
+        "artist": "Osman Mir & Bhumi Trivedi"
+      },
+      {
+        "name": "Tahuko Bhag : 5",
+        "link": "https://www.youtube.com/watch?v=qRBix85kgvI&ab_channel=SurSagarMusic",
+        "artist": "Unknown"
+      },
+      {
+        "name": "Tahuko Non Stop",
+        "link": "https://www.youtube.com/watch?v=U87faHS1ahw&ab_channel=AkHitsMusic",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 2",
+        "link": "https://www.youtube.com/watch?v=w28Vu4OGSD8&ab_channel=AbhilashPatel",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 4",
+        "link": "https://www.youtube.com/watch?v=h5HEJWU38k8&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": " Non Stop Bansari Ras",
+        "link": "https://www.youtube.com/watch?v=-cIcpIPQPI8&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 11",
+        "link": "https://www.youtube.com/watch?v=WBn4e1P3RRY&feature=youtu.be&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 3",
+        "link": "https://www.youtube.com/watch?v=j8vb4vZxuC4&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 6",
+        "link": "https://www.youtube.com/watch?v=QXLNpSjk9TM&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Hemant Chauhan"
+      },
+      {
+        "name": "Tahuko Bhag : 10",
+        "link": "https://www.youtube.com/watch?v=mw5eourDIsQ&ab_channel=SoorMandirAudioJukebox",
+        "artist": "Pamela Jain"
+      },
+      {
+        "name": "Tahuko Bhag : 18",
+        "link": "https://www.youtube.com/watch?v=qVS-73FrjfE&feature=youtu.be&ab_channel=SoorMandir",
+        "artist": "Pamela Jain & Hemant Chauha"
+      },
+      {
+        "name": "Chundadi",
+        "link": "https://www.youtube.com/watch?v=wkm7gQYP0As&feature=youtu.be&ab_channel=GujaratiBhajan",
+        "artist": "Hemant Chauhan"
       }
     ]
   }

@@ -1,7 +1,9 @@
 import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/material.dart';
+import 'package:garbacollection/Constants/HiveStoreUtil.dart';
 import 'package:garbacollection/Constants/ImagePath.dart';
 import 'package:garbacollection/Screen/Settings/AboutAppScreen.dart';
+import 'package:garbacollection/translations/appString.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
@@ -14,7 +16,7 @@ class SettingsPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Settings",
+          AppStrings.settings.tr,
           style: TextStyle(
               fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
         ),
@@ -30,14 +32,17 @@ class SettingsPage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(15),
         children: <Widget>[
-          getCustomListTile("About App",ImagePath.aboutIcon,onTap: () {
+          getCustomListTile(AppStrings.about_app.tr,ImagePath.aboutIcon,onTap: () {
             Get.to(() => AboutAppScreen());
           },),
-          getCustomListTile("Share App",ImagePath.shareAppIcon,onTap: () {
+          getCustomListTile(AppStrings.share_app.tr,ImagePath.shareAppIcon,onTap: () {
             Share.share("Get ready to groove to the beats of Garba with the Garba Collection app! \n Download Now : https://play.google.com/store/apps/details?id=com.miracle.garbacollection");
           },),
-          getCustomListTile("Rate Us",ImagePath.rateUsIcon,onTap: () {
+          getCustomListTile(AppStrings.rate_us.tr,ImagePath.rateUsIcon,onTap: () {
             launch("https://play.google.com/store/apps/details?id=com.miracle.garbacollection");
+          },),
+          getCustomListTile(AppStrings.change_language.tr,ImagePath.changeLanguageIcon,onTap: () {
+            Get.dialog(LanguageDialog());
           },),
         ],
       ),
@@ -83,6 +88,34 @@ class SettingsPage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class LanguageDialog extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SimpleDialog(
+      title: Text(AppStrings.select_language.tr),
+      children: [
+        ListTile(
+          title: Text('English'),
+          onTap: () {
+            HiveStoreUtil.setString(HiveStoreUtil.languageCodeKey, "en");
+            Get.updateLocale(Locale('en'));
+            Get.back(); // Close the dialog
+          },
+        ),
+        ListTile(
+          title: Text('ગુજરાતી'),
+          onTap: () {
+            HiveStoreUtil.setString(HiveStoreUtil.languageCodeKey, "gu");
+            Get.updateLocale(Locale('gu'));
+            Get.back(); // Close the dialog
+          },
+        ),
+        // Add more language options here
+      ],
     );
   }
 }

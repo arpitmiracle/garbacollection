@@ -15,4 +15,5 @@ class ImagePath{
   static const aboutIcon = 'assets/icons/about_icon.png';
   static const rateUsIcon = 'assets/icons/rate_us_icon.png';
   static const shareAppIcon = 'assets/icons/share_app_icon.png';
+  static const changeLanguageIcon = 'assets/icons/change_language_icon.png';
 }

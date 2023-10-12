@@ -12,8 +12,7 @@ class MusicPageController extends GetxController {
   }
 
   Future<List<GarbaCategory>> loadGarbaData() async {
-    final String jsonString =
-    await rootBundle.loadString('assets/i18n/song.json');
+    final String jsonString = await rootBundle.loadString('assets/i18n/${Get.locale?.languageCode == "en" ? "song.json" : "song_gu.json"}');
     final List<dynamic> jsonResponse = json.decode(jsonString);
     return jsonResponse.map((i) => GarbaCategory.fromJson(i)).toList();
   }

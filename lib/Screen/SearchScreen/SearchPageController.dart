@@ -8,12 +8,12 @@ class SearchPageController extends GetxController {
   List<Video> videoLinks = [];
 
   getData() async{
-    final String jsonString = await rootBundle.loadString('assets/i18n/song.json');
+    final String jsonString = await rootBundle.loadString('assets/i18n/${Get.locale?.languageCode == "en" ? "song.json" : "song_gu.json"}');
     List<dynamic> jsonData = json.decode(jsonString);
     videoLinks = [];
     for (var category in jsonData) {
       for (var video in category["videos"]) {
-        videoLinks.add(Video(name: video["name"], link: video["link"]));
+        videoLinks.add(Video.fromJson(video));
       }
     }
     update();

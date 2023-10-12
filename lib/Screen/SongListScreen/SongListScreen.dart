@@ -52,66 +52,66 @@ class SongListScreen extends StatelessWidget {
             padding: EdgeInsets.all(15),
             shrinkWrap: true,
             itemBuilder: (context, index) {
-              return Container(
-                color: CustomColors.songListColor,
-                height: 80,
-                margin: EdgeInsets.symmetric(vertical: 8),
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Expanded(
-                        flex: 1,
-                        child: Image.asset(
-                          ImagePath.alumb,
-                          width: 50,
-                          height: 50,
-                        )),
-                    Expanded(
-                        flex: 3,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              garbaCategory.videos[index].name,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                color: CustomColors.tittleColor,
-                                fontSize: 18,
-                                fontFamily: GoogleFonts.alatsi().fontFamily
-                              ),
-                            ),
-                            Text(
-                              "Unknown",
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                  color: CustomColors.author,
-                                  fontSize: 16,
+              return InkWell(
+                onTap: () async {
+                  await Get.toNamed(Routes.playSongScreen, arguments: garbaCategory.videos[index].link);
+                  Future.delayed(Duration(milliseconds: 500),() {
+                    SystemChrome.setPreferredOrientations([
+                      DeviceOrientation.portraitDown,
+                      DeviceOrientation.portraitUp,
+                    ]);
+                  },);
+                },
+                child: Container(
+                  color: CustomColors.songListColor,
+                  height: 80,
+                  margin: EdgeInsets.symmetric(vertical: 8),
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                          flex: 1,
+                          child: Image.asset(
+                            ImagePath.alumb,
+                            width: 50,
+                            height: 50,
+                          )),
+                      Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                garbaCategory.videos[index].name,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: CustomColors.tittleColor,
+                                  fontSize: 18,
                                   fontFamily: GoogleFonts.alatsi().fontFamily
+                                ),
                               ),
-                            ),
-                          ],
-                        )),
-                    Expanded(
-                        flex: 1,
-                        child: InkWell(
-                          onTap: () async {
-                           await Get.toNamed(Routes.playSongScreen, arguments: garbaCategory.videos[index].link);
-                           Future.delayed(Duration(milliseconds: 500),() {
-                             SystemChrome.setPreferredOrientations([
-                               DeviceOrientation.portraitDown,
-                               DeviceOrientation.portraitUp,
-                             ]);
-                           },);
-                          },
+                              Text(
+                                garbaCategory.videos[index].artist,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                    color: CustomColors.author,
+                                    fontSize: 16,
+                                    fontFamily: GoogleFonts.alatsi().fontFamily
+                                ),
+                              ),
+                            ],
+                          )),
+                      Expanded(
+                          flex: 1,
                           child: Image.asset(
                             ImagePath.play,
                             width: 30,
                             height: 30,
-                          ),
-                        ))
-                  ],
+                          ))
+                    ],
+                  ),
                 ),
               );
           }),

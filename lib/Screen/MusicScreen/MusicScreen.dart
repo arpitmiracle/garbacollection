@@ -1,11 +1,12 @@
 import 'dart:convert';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:garbacollection/Constants/AppStrings.dart';
 import 'package:garbacollection/Route/Routes.dart';
 import 'package:garbacollection/Screen/MusicScreen/MusicPageController.dart';
 import 'package:garbacollection/Screen/MusicScreen/GarbaCategory.dart';
+import 'package:garbacollection/translations/appString.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,7 +20,7 @@ class MusicScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Music Categories",
+          AppStrings.music_categories.tr,
           style: TextStyle(
               fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
         ),
@@ -55,10 +56,11 @@ class MusicScreen extends StatelessWidget {
                           },
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(15),
-                              child: Image.network(
-                                category.albumPoster,
-
-                              )),
+                              child: CachedNetworkImage(
+                                imageUrl: category.albumPoster,
+                                placeholder: (context, url) => CircularProgressIndicator(),
+                              ),
+                          ),
                         ),
                         SizedBox(
                           height: 5,
