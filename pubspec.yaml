@@ -44,6 +44,7 @@ dependencies:
   url_launcher: ^6.3.0
   cached_network_image: ^3.4.1
   hive_flutter: ^2.0.0-dev
+  flutter_native_ad:
 
 dev_dependencies:
   flutter_test:

@@ -4,14 +4,18 @@ import 'package:flutter/services.dart';
 import 'package:garbacollection/Constants/ImagePath.dart';
 import 'package:garbacollection/Route/Routes.dart';
 import 'package:garbacollection/Screen/MusicScreen/GarbaCategory.dart';
+import 'package:garbacollection/utils/AdsHelper.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 
 class SongListScreen extends StatelessWidget { 
   GarbaCategory garbaCategory = Get.arguments;
+  AdsHelper adsHelper = AdsHelper();
 
   @override
   Widget build(BuildContext context) {
+    AdsHelper.loadInterstitialAd();
+    adsHelper.loadBannerAd();
     return Scaffold(
       backgroundColor: CustomColors.white,
       appBar: AppBar(
@@ -53,6 +57,7 @@ class SongListScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             return InkWell(
               onTap: () async {
+                AdsHelper.showInterstitialAd();
                 await Get.toNamed(Routes.playSongScreen, arguments: garbaCategory.videos[index].link);
                 Future.delayed(Duration(milliseconds: 500),() {
                   SystemChrome.setPreferredOrientations([
@@ -114,6 +119,7 @@ class SongListScreen extends StatelessWidget {
               ),
             );
         }),
+      bottomNavigationBar: adsHelper.showBannerAd(),
     );
   }
 }

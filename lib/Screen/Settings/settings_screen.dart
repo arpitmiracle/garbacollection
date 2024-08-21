@@ -4,14 +4,19 @@ import 'package:garbacollection/Constants/HiveStoreUtil.dart';
 import 'package:garbacollection/Constants/ImagePath.dart';
 import 'package:garbacollection/Screen/Settings/AboutAppScreen.dart';
 import 'package:garbacollection/translations/appString.dart';
+import 'package:garbacollection/utils/AdsHelper.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatelessWidget {
+  AdsHelper adsHelper = AdsHelper();
+
   @override
   Widget build(BuildContext context) {
+    AdsHelper.loadInterstitialAd();
+    adsHelper.loadBannerAd();
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -33,19 +38,24 @@ class SettingsPage extends StatelessWidget {
         padding: EdgeInsets.all(15),
         children: <Widget>[
           getCustomListTile(AppStrings.about_app.tr,ImagePath.aboutIcon,onTap: () {
+            AdsHelper.showInterstitialAd();
             Get.to(() => AboutAppScreen());
           },),
           getCustomListTile(AppStrings.share_app.tr,ImagePath.shareAppIcon,onTap: () {
-            Share.share("Get ready to groove to the beats of Garba with the Garba Collection app! \n Download Now : https://play.google.com/store/apps/details?id=com.miracle.garbacollection");
+            AdsHelper.showInterstitialAd();
+            Share.share("Get ready to groove to the beats of Garba with the Garba Collection app! \n Download Now : https://play.google.com/store/apps/details?id=com.garba.collection");
           },),
           getCustomListTile(AppStrings.rate_us.tr,ImagePath.rateUsIcon,onTap: () {
-            launch("https://play.google.com/store/apps/details?id=com.miracle.garbacollection");
+            AdsHelper.showInterstitialAd();
+            launch("https://play.google.com/store/apps/details?id=com.garba.collection");
           },),
           getCustomListTile(AppStrings.change_language.tr,ImagePath.changeLanguageIcon,onTap: () {
+            AdsHelper.showInterstitialAd();
             Get.dialog(LanguageDialog());
           },),
         ],
       ),
+      bottomNavigationBar: adsHelper.showBannerAd(),
     );
   }
 
@@ -101,17 +111,17 @@ class LanguageDialog extends StatelessWidget {
         ListTile(
           title: Text('English'),
           onTap: () {
+            Navigator.pop(context);
             HiveStoreUtil.setString(HiveStoreUtil.languageCodeKey, "en");
             Get.updateLocale(Locale('en'));
-            Get.back(); // Close the dialog
           },
         ),
         ListTile(
           title: Text('ગુજરાતી'),
           onTap: () {
+            Navigator.pop(context);
             HiveStoreUtil.setString(HiveStoreUtil.languageCodeKey, "gu");
             Get.updateLocale(Locale('gu'));
-            Get.back(); // Close the dialog
           },
         ),
         // Add more language options here

@@ -5,15 +5,19 @@ import 'package:garbacollection/Route/Routes.dart';
 import 'package:garbacollection/Screen/MusicScreen/MusicPageController.dart';
 import 'package:garbacollection/Screen/MusicScreen/GarbaCategory.dart';
 import 'package:garbacollection/translations/appString.dart';
+import 'package:garbacollection/utils/AdsHelper.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MusicScreen extends StatelessWidget {
   MusicPageController controller = Get.put(MusicPageController());
+  AdsHelper adsHelper = AdsHelper();
 
   @override
   Widget build(BuildContext context) {
     controller.getData();
+    AdsHelper.loadInterstitialAd();
+    adsHelper.loadBannerAd();
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -50,6 +54,7 @@ class MusicScreen extends StatelessWidget {
                       children: [
                         InkWell(
                           onTap: () {
+                            AdsHelper.showInterstitialAd();
                             Get.toNamed(Routes.songListScreen, arguments: category);
                           },
                           child: ClipRRect(
@@ -79,6 +84,7 @@ class MusicScreen extends StatelessWidget {
           }
         },
       ),
+      bottomNavigationBar: adsHelper.showBannerAd(),
     );
   }
 

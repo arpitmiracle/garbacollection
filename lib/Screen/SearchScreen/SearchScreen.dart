@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:garbacollection/Route/Routes.dart';
 import 'package:garbacollection/Screen/SearchScreen/SearchPageController.dart';
 import 'package:garbacollection/translations/appString.dart';
+import 'package:garbacollection/utils/AdsHelper.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,14 +13,17 @@ import '../../Constants/ImagePath.dart';
 class SearchScreen extends StatelessWidget {
   SearchPageController controller = Get.put(SearchPageController());
   TextEditingController searchController = TextEditingController();
+  AdsHelper adsHelper = AdsHelper();
 
   @override
   Widget build(BuildContext context) {
     controller.getData();
+    AdsHelper.loadInterstitialAd();
+    adsHelper.loadBannerAd();
     return Scaffold(
       backgroundColor: CustomColors.white,
       body: Container(
-        padding: EdgeInsets.all(15),
+        padding: EdgeInsets.only(right: 15,left: 15,top: 15+MediaQuery.of(context).padding.top),
         child: GetBuilder<SearchPageController>(
           builder: (controller) => Column(
             children: [
@@ -40,11 +44,13 @@ class SearchScreen extends StatelessWidget {
               SizedBox(height: 3.w,),
               Expanded(child: controller.videoLinks.isEmpty ? Center(child: CircularProgressIndicator(),) : ListView.builder(
                   itemCount: controller.videoLinks.length,
+                  padding: EdgeInsets.zero,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     if(controller.videoLinks[index].name.contains(searchController.text.trim())){
                       return InkWell(
                         onTap: () async {
+                          AdsHelper.showInterstitialAd();
                           await Get.toNamed(Routes.playSongScreen, arguments: controller.videoLinks[index].link);
                           Future.delayed(Duration(milliseconds: 500),() {
                             SystemChrome.setPreferredOrientations([
@@ -112,6 +118,7 @@ class SearchScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: adsHelper.showBannerAd(),
     );
   }
 }

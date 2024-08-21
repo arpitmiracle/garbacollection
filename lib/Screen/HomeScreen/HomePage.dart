@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _createBottomNavigationBar() {
     return Container(
-      height: 70,
+      height: 60,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [CustomColors.primary, CustomColors.secondary],
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         unselectedItemColor: CustomColors.white,
         selectedItemColor: CustomColors.assets,
-        iconSize: 28,
+        iconSize: 25,
         items: menuItemList
             .map((e) => BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage(e.imgIcon)), label: e.text))

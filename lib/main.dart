@@ -1,5 +1,6 @@
 import 'package:custom_element/custom_elements.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_ad/flutter_native_ad.dart';
 import 'package:garbacollection/Constants/HiveStoreUtil.dart';
 import 'package:garbacollection/Route/Routes.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,7 @@ import 'translations/appString.dart';
 void main() async{
   await Hive.initFlutter();
   await Hive.openBox('GarbaCollection');
-
+  FlutterNativeAd.init();
   runApp(const MyApp());
 }
 
