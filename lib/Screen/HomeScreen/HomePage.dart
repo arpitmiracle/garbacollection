@@ -24,12 +24,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: CustomColors.white,
-        body: _buildBody[index],
-        bottomNavigationBar: _createBottomNavigationBar(),
-      ),
+    return Scaffold(
+      backgroundColor: CustomColors.white,
+      body: _buildBody[index],
+      bottomNavigationBar: _createBottomNavigationBar(),
     );
   }
 

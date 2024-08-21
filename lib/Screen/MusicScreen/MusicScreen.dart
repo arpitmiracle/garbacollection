@@ -20,7 +20,7 @@ class MusicScreen extends StatelessWidget {
         title: Text(
           AppStrings.music_categories.tr,
           style: TextStyle(
-              fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
+              fontSize: 22, fontFamily: GoogleFonts.alata().fontFamily,color: Colors.white),
         ),
         flexibleSpace: Container(
           decoration: const BoxDecoration(

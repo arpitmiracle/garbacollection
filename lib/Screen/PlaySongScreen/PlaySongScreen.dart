@@ -62,6 +62,7 @@ class _PlaySongScreenState extends State<PlaySongScreen> {
   @override
   Widget build(BuildContext context){
 
+
     return WillPopScope(
       onWillPop: () async {
         return true;
@@ -111,10 +112,7 @@ class _PlaySongScreenState extends State<PlaySongScreen> {
           },
         ),
         onExitFullScreen: () {
-          SystemChrome.setPreferredOrientations([
-            DeviceOrientation.portraitUp,
-            DeviceOrientation.portraitDown,
-          ]);
+
         },
       ),
     );

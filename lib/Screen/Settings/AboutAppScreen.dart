@@ -14,10 +14,16 @@ class AboutAppScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            Get.back();
+          },
+          icon: Icon(Icons.arrow_back_ios,color: Colors.white,),
+        ),
         title: Text(
-          AppStrings.settings.tr,
+          AppStrings.about_app.tr,
           style: TextStyle(
-              fontSize: 26, fontFamily: GoogleFonts.alata().fontFamily),
+              fontSize: 22, fontFamily: GoogleFonts.alata().fontFamily,color: Colors.white,),
         ),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
