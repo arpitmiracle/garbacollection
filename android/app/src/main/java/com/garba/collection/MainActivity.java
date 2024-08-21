@@ -1,4 +1,4 @@
-package com.example.garbacollection;
+package com.garba.collection;
 
 import io.flutter.embedding.android.FlutterActivity;
 

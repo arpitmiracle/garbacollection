@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context,orientation,deviceType){
         return GetMaterialApp(
-          title: 'Flutter Demo',
+          title: 'Garba Collection',
           debugShowCheckedModeBanner: false,
           getPages: Screens.routes,
           initialRoute: Routes.splashPage,
