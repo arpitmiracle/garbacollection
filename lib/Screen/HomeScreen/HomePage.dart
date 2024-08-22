@@ -7,6 +7,7 @@ import 'package:garbacollection/Screen/SearchScreen/SearchScreen.dart';
 import 'package:garbacollection/Screen/Settings/settings_screen.dart';
 import 'package:garbacollection/translations/appString.dart';
 import 'package:get/get.dart';
+import 'package:upgrader/upgrader.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -24,10 +25,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: CustomColors.white,
-      body: _buildBody[index],
-      bottomNavigationBar: _createBottomNavigationBar(),
+    return UpgradeAlert(
+      child: Scaffold(
+        backgroundColor: CustomColors.white,
+        body: _buildBody[index],
+        bottomNavigationBar: _createBottomNavigationBar(),
+      ),
     );
   }
 

@@ -45,6 +45,7 @@ dependencies:
   cached_network_image: ^3.4.1
   hive_flutter: ^2.0.0-dev
   flutter_native_ad:
+  upgrader: ^10.3.0
 
 dev_dependencies:
   flutter_test:
