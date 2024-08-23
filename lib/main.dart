@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context,orientation,deviceType){
         return GetMaterialApp(
-          title: 'Garba Collection',
+          title: 'Garba Collection 2024',
           debugShowCheckedModeBanner: false,
           getPages: Screens.routes,
           initialRoute: Routes.splashPage,
